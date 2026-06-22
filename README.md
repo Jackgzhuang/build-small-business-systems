@@ -1,50 +1,90 @@
 # Build Small Business Systems
 
-Most small businesses do not have a software problem.
+This is a public Build in Public project about turning real small-business problems into practical systems.
 
-They have an operational problem.
+It is not a portfolio of completed software products. It documents problems observed through real conversations with founders and small business owners, the thinking used to understand them, and the solutions that may follow.
 
-Over the past 25 years, I have worked in banking, telecom, ERP, CRM and enterprise operations.
+Not every case will reach implementation. Some may remain at the analysis or system-design stage, and their status will be shown plainly.
 
-One pattern appears again and again:
+## Why This Repository Exists
 
-- Leads are lost
-- Follow-ups are inconsistent
-- Decisions depend on the owner
-- Processes exist only in people's heads
-- Teams spend time on repetitive work
+Small businesses often do not have a software problem first. They have an operational bottleneck:
 
-Large enterprises solve these problems with systems.
+- Too many decisions depend on the founder
+- Leads are not followed up consistently
+- Calls and customer requests are missed
+- Customer information is difficult to manage
+- Booking and approval workflows are unclear
+- Important processes exist only in people's heads
 
-Small businesses often cannot justify expensive enterprise software.
+The most valuable skill is identifying the bottleneck. Software is one possible implementation layer.
 
-This repository documents a different approach.
+## The Journey
 
-## What I Build
+Each case can move through the following stages:
 
-Small systems that solve real business problems.
+```text
+Business Problem
+       ↓
+Analysis
+       ↓
+System Design
+       ↓
+MVP
+       ↓
+Implementation
+       ↓
+Results
+```
 
-Examples include:
+Progress is not assumed. The current state of every case is documented in its `status.md` file.
 
-- Decision Matrix Systems
-- Lead Follow-Up Systems
-- Missed Call Recovery Systems
-- Customer Intake Systems
-- Booking Management Systems
-- Approval Workflow Systems
+## What Each Case Explores
 
-## Method
+1. The business challenge
+2. The observations and possible root causes
+3. Potential system solutions
+4. MVP ideas, when appropriate
+5. Implementation and lessons learned, when they exist
 
-1. Identify the bottleneck
-2. Design the workflow
-3. Build a lightweight system
-4. Test with real-world scenarios
-5. Iterate
+## Cases
 
-## About Me
+| Case | Current stage |
+| --- | --- |
+| [001 — Founder Decision Bottleneck](cases/001-founder-decision-bottleneck/) | Solution concept defined; no implementation yet |
 
-25+ years in enterprise IT.
+New cases will be added only when there is a real observation or conversation to document.
 
-Banking, telecom, ERP, CRM, automation, business systems and operational improvement.
+## Repository Structure
 
-I enjoy turning business problems into working solutions.
+```text
+cases/       Real business problems and their evolving solutions
+templates/   Reusable documentation templates
+docs/        Repository-wide notes and supporting documentation
+systems/     Early system concepts retained as the project evolves
+```
+
+A case normally begins with:
+
+```text
+problem.md
+observations.md
+possible-solution.md
+status.md
+```
+
+If the work advances, it may also include `mvp/`, `screenshots/`, or `results/`.
+
+## Integrity Principles
+
+- Do not invent customers, projects, results, or case studies.
+- Separate observations from assumptions.
+- Label untested ideas as potential solutions.
+- State clearly when no implementation or validation exists.
+- Update results only when there is real evidence.
+
+The goal is credibility through an honest record of the work.
+
+## Long-Term Direction
+
+Over time, some cases may evolve into working MVPs, open-source tools, consulting frameworks, client projects, or commercial products. This repository is intended to make that evolution visible—from identifying a business bottleneck to designing and implementing a useful system.
